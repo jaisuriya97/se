@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='login.css') }}">
+</head>
+<body>
+    
+		<header>
+			<a href="#" class="logo">MellowTrips</a>
+			<div class="rightside">
+				<div class="btns daynight">
+					<ion-icon name="moon-outline"></ion-icon>
+					<ion-icon name="sunny-outline"></ion-icon>
+				</div>
+				<div class="btns menutoggle">
+					<ion-icon name="grid-outline"></ion-icon>
+				</div>
+			</div>
+        </header>
+		{% with messages=get_flashed_messages()  %}
+			{% if messages %}
+				{% for msg in messages  %} 
+				<div class="error">
+						<p>	{{msg}}</p><ion-icon name="alert-circle-outline"></ion-icon></div>
+				{% endfor %}
+			{% endif %}
+		{% endwith %}
+        <img  width="100%" height="10%" src="{{url_for('static', filename='eiffel2.jpg')}}" />
+    <div class="content">
+        <h1 class="lo">Login</h1>
+        <form method="POST"> 
+            <input class="name" type="text" name="name" placeholder="Name" required autocomplete="off">
+            <br>
+            <input class="Password" type="Password" name="password" placeholder="Password" required>
+            <br>
+            <input class="login" type="submit" name="submit" value="login">
+            <input class="reg" type="button" name="Register" value="Register" onclick="window.location.href='{{ url_for( 'signup'  ) }}';">
+        </form>
+    </div>
+
+
+
+    <ul class="navigation">
+        <li><a onclick="window.location.href='{{ url_for( 'index'  ) }}';">Home</a></li>
+        <li><a onclick="window.location.href='{{ url_for( 'signup'  ) }}';">SignUp</a></li>
+        <li><a onclick="window.location.href='{{ url_for( 'login'  ) }}';">login</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Package</a></li>
+
+    </ul>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script>
+			let daynight = document.querySelector('.daynight')
+			let menutoggle = document.querySelector('.menutoggle')
+			let body = document.querySelector('body')
+			let navigation = document.querySelector('.navigation')
+
+			daynight.onclick=function(){
+				body.classList.toggle('dark')
+				daynight.classList.toggle('active')
+			}
+			menutoggle.onclick=function(){
+				menutoggle.classList.toggle('action')
+				navigation.classList.toggle('action')
+			}
+		</script>
+</body>
+</html>

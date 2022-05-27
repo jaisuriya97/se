@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Itali</title>
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='romehtml.css') }}">
+</head>
+<body>
+	 <header>
+        <a href="#" class="logo">MellowTrips</a>
+        <div class="rightside">
+            <div class="btns daynight">
+                <ion-icon name="moon-outline"></ion-icon>
+                <ion-icon name="sunny-outline"></ion-icon>
+            </div>
+            <div class="btns menutoggle">
+                <ion-icon name="grid-outline"></ion-icon>
+            </div>
+        </div>
+    </header>
+    <img width="100%" height="100%"  src="{{url_for('static', filename='italy8.jpg')}}" />
+      <ul class="navigation">
+        <li><a onclick="window.location.href='{{ url_for( 'index'  ) }}';">Home</a></li>
+        <li><a href="#">signUp</a></li>
+        <li><a onclick="window.location.href='{{ url_for( 'login'  ) }}';">login</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Package</a></li>
+
+    </ul>
+    <div class="row">
+    	<div class="col">
+    		<h1 class="france">Italy</h1>
+    		<br>
+
+    		<p class="franceclass">Italy, a European country with a long Mediterranean coastline, has left a powerful mark on<br> Western culture and cuisine.<br><br>Full Pack for 9999$ only </p>
+    	</div>
+        <input class="reg" type="button" name="Register" value="Book Now" onclick="window.location.href='{{ url_for( 'login'  ) }}';">
+    </div>
+        <section class="mainbody">
+			
+            <div class="container">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img  width="100%" height="100%" src="{{url_for('static', filename='floren2.jpg')}}" />
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h1 >Florence Duomo Santa Maria del Fiore</h1>
+                                <p class="p">
+                                    ‘Rome will exist as long as the Coliseum does; when the Coliseum falls, so will Rome; when Rome falls, so will the world.’
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="imgbox">
+                            <img  width="100%" height="10%" src="{{url_for('static', filename='uffi4.jpg')}}" />
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h1>The Uffizi Gallery in Florence</h1>
+                                <p class="p">
+                                    In addition to being one of the world's foremost art museums, the Uffizi is a one-stop history of Italian Renaissance art. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="imgbox">
+                            <img  width="100%" height="10%" src="{{url_for('static', filename='pisa2.jpg')}}" />
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h1>Leaning Tower of Pisa</h1>
+                                <p class="p"> The Leaning Tower of Pisa (La Torre Pendente) is just one of many attractions in the city of Pisa, one whose world fame comes not from the considerable elegance of its design, but from a flaw.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="imgbox">
+                            <img  width="100%" height="10%" src="{{url_for('static', filename='grand2.jpg')}}" />
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h1>The Grand Canal in Venice</h1>
+                                <p class="p">A gondola ride through the canals of Venice is a tradition that travelers have been enjoying for centuries. Venice is a city of islands</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <h1 class="suggest">
+            Hotels Suggested
+        </h1>
+        <section class="hotelmainbody">
+			
+            <div class="hotelcontainer">
+                    <div class="hotelbox">
+                        <div class="hotelimgbox">
+                            <img  width="100%" height="100%" src="{{url_for('static', filename='italyhotel2.jpg')}}" />
+                        </div>
+                        <div class="hotelcontent">
+                            <div>
+                                <h1>
+                                    Hotel Baltic</h1>
+                                <p class="pk">
+                                    3-star hotel<br>
+                                    Piazzale S. Martino, 1, 47838 Riccione RN<br>
+                                    Italy•+39 0541 600966
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="hotelbox">
+                        <div class="hotelimgbox">
+                            <img  width="100%" height="10%" src="{{url_for('static', filename='italyhotel4.jpg')}}" />
+                        </div>
+                        <div class="hotelcontent">
+                            <div>
+                                <h1>Hotel Riva</h1>
+                                <p class="pk">
+                                    4-star hotel<br>
+                                    Corso Europa, 64, 17021 Alassio SV<br>Italy•+39 0182 470549
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hotelbox">
+                        <div class="hotelimgbox">
+                            <img  width="100%" height="10%" src="{{url_for('static', filename='italyhotel5.jpg')}}" />
+                        </div>
+                        <div class="hotelcontent">
+                            <div>
+                                <h1>Hotel Artemide</h1>
+                                <p class="pk"> 4-star hotel<br>
+                                    Via Nazionale, 22, 00184 Roma RM<br>Italy•+39 06 489911</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hotelbox">
+                        <div class="hotelimgbox">
+                            <img  width="100%" height="10%" src="{{url_for('static', filename='italyhotel6.jpg')}}" />
+                        </div>
+                        <div class="hotelcontent">
+                            <div>
+                                <h1>Hotel La Bitta
+                                   </h1>
+                                <p class="pk"> 4-star hotel<br>
+                                    Via Porto Frailis, 08048 Arbatax NU<br>Italy•+39 0782 667080</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        
+       
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script>
+			let daynight = document.querySelector('.daynight')
+			let menutoggle = document.querySelector('.menutoggle')
+			let body = document.querySelector('body')
+			let navigation = document.querySelector('.navigation')
+
+			daynight.onclick=function(){
+				body.classList.toggle('dark')
+				daynight.classList.toggle('active')
+			}
+			menutoggle.onclick=function(){
+				menutoggle.classList.toggle('action')
+				navigation.classList.toggle('action')
+			}
+		</script>
+</body>
+</html>

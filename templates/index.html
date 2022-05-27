@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title%}Mello Travels{%endblock %}</title>
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='index.css') }}">
+</head>
+<body>
+		<header>
+			<a href="#" class="logo">MellowTrips</a>
+			<div class="rightside">
+				<div class="btns daynight">
+					<ion-icon name="moon-outline"></ion-icon>
+					<ion-icon name="sunny-outline"></ion-icon>
+				</div>
+				<div class="btns menutoggle">
+					<ion-icon name="grid-outline"></ion-icon>
+				</div>
+			</div>
+
+
+		</header>
+		<section class="main">
+			<video  autoplay loop muted width="100%">
+				<source src={{ url_for('static', filename="video3.mp4") }} type="video/mp4">
+			  </video>
+			  <img class="mask" src="{{url_for('static', filename='mask.jpg')}}" />
+			  <h2 class="explore">
+				  explore
+			  </h2>
+			  <ul class="sci">
+				<li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+				<li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></ion-icon></a></li>
+				<li><a href="#"><ion-icon name="mail-outline"></ion-icon></a></li>
+			  </ul>
+
+		</section>
+		<ul class="navigation">
+			<li><a href="#">Home</a></li>
+			<li><a onclick="window.location.href='{{ url_for( 'signup'  ) }}';">signup</a></li>
+			<li><a onclick="window.location.href='{{ url_for( 'login'  ) }}';">login</a></li>
+			<li><a onclick="window.location.href='{{ url_for( 'booking'  ) }}';">Booking</a></li>
+
+		</ul>
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+		<script>
+			let daynight = document.querySelector('.daynight')
+			let menutoggle = document.querySelector('.menutoggle')
+			let body = document.querySelector('body')
+			let navigation = document.querySelector('.navigation')
+
+			daynight.onclick=function(){
+				body.classList.toggle('dark')
+				daynight.classList.toggle('active')
+			}
+			menutoggle.onclick=function(){
+				menutoggle.classList.toggle('action')
+				navigation.classList.toggle('action')
+			}
+		</script>
+		<div class="cont">
+		<div class="lines">
+			<div class="circle"></div>
+		</div> 
+	</div>
+		<h1 class="pack">Package</h1>
+		<section class="mainbody">
+			
+		<div class="container">
+				<div class="box">
+					<div class="imgbox">
+						<img  width="100%" height="10%" src="{{url_for('static', filename='rome2.jpg')}}" />
+					</div>
+					<div class="content">
+						<div>
+							<h1 onclick="window.location.href='{{ url_for( 'rome'  ) }}';">Italy</h1>
+							<p class="p">
+								‘Rome will exist as long as the Coliseum does; when the Coliseum falls, so will Rome; when Rome falls, so will the world.’
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="box">
+					<div class="imgbox">
+						<img  width="100%" height="10%" src="{{url_for('static', filename='parise2.jpg')}}" />
+					</div>
+					<div class="content">
+						<div>
+							<h1 onclick="window.location.href='{{ url_for( 'france'  ) }}';">France</h1>
+							<p class="p">
+								“Breathe Paris in. It nourishes the soul.”
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="box">
+					<div class="imgbox">
+						<img  width="100%" height="10%" src="{{url_for('static', filename='usa.jpg')}}" />
+					</div>
+					<div class="content">
+						<div>
+							<h1 onclick="window.location.href='{{ url_for( 'booking'  ) }}';">US</h1>
+							<p class="p">“Practically everybody in New York has half a mind to write a book — and does.”</p>
+						</div>
+					</div>
+				</div>
+				<div class="box">
+					<div class="imgbox">
+						<img  width="100%" height="10%" src="{{url_for('static', filename='dubai.jpg')}}" />
+					</div>
+					<div class="content">
+						<div>
+							<h1 onclick="window.location.href='{{ url_for( 'booking'  ) }}';">Dubai</h1>
+							<p class="p">“I want Dubai to be a place where everybody from all over the world meets each other.”</p>
+							
+						</div>
+					</div>
+				</div>
+		</div>
+	</section>
+</body>
+</html>

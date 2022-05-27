@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>France</title>
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='romehtml.css') }}">
+</head>
+<body>
+	 <header>
+        <a href="#" class="logo">MellowTrips</a>
+        <div class="rightside">
+            <div class="btns daynight">
+                <ion-icon name="moon-outline"></ion-icon>
+                <ion-icon name="sunny-outline"></ion-icon>
+            </div>
+            <div class="btns menutoggle">
+                <ion-icon name="grid-outline"></ion-icon>
+            </div>
+        </div>
+    </header>
+    <img width="100%" height="100%"  src="{{url_for('static', filename='frace.jpg')}}" />
+      <ul class="navigation">
+        <li><a onclick="window.location.href='{{ url_for( 'index'  ) }}';">Home</a></li>
+        <li><a href="#">signUp</a></li>
+        <li><a onclick="window.location.href='{{ url_for( 'login'  ) }}';">login</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Package</a></li>
+
+    </ul>
+    <div class="row">
+    	<div class="col">
+    		<h1 class="france">France</h1>
+    		<br>
+
+    		<p class="franceclass">France, in Western Europe, encompasses medieval cities, alpine villages and Mediterranean beaches. <br><br>Full Pack for 9999$ only </p>
+    	</div>
+        <input class="reg" type="button" name="Register" value="Book Now" onclick="window.location.href='{{ url_for( 'booking'  ) }}';">
+    </div>
+        <section class="mainbody">
+			
+            <div class="container">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img  width="100%" height="100%" src="{{url_for('static', filename='filip-andrejevic-FJYS6vuf39k-unsplash.jpg')}}" />
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h1 >Eiffel Tower</h1>
+                                <p class="p">
+                                    The symbol of Paris, the Eiffel Tower is a feat of ingenuity as much as it is a famous landmark.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="imgbox">
+                            <img  width="100%" height="10%" src="{{url_for('static', filename='musee.jpg')}}" />
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h1>Musée du Louvre</h1>
+                                <p class="p">
+                                    In a stately palace that was once a royal residence, the Louvre Museum ranks among the top European collections of fine arts. Many of Western Civilization's most famous works are found here
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="imgbox">
+                            <img  width="100%" height="10%" src="{{url_for('static', filename='cote2.jpg')}}" />
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h1> Côte d'Azur</h1>
+                                <p class="p"> The most fashionable stretch of coastline in France, the Côte d'Azur extends from Saint-Tropez to Menton near the border with Italy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="imgbox">
+                            <img  width="100%" height="10%" src="{{url_for('static', filename='prov2.jpg')}}" />
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h1> Provence</h1>
+                                <p class="p">Provence invites visitors to escape into a dreamy bucolic landscape of olive groves, sun-drenched rolling hills, and deep purple lavender fields, with little villages nestled in the valleys and perched on rocky outcrops. </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <h1 class="suggest">
+            Hotels Suggested
+        </h1>
+        <section class="hotelmainbody">
+			
+            <div class="hotelcontainer">
+                    <div class="hotelbox">
+                        <div class="hotelimgbox">
+                            <img  width="100%" height="100%" src="{{url_for('static', filename='italyhotel2.jpg')}}" />
+                        </div>
+                        <div class="hotelcontent">
+                            <div>
+                                <h1>
+                                    Hotel Baltic</h1>
+                                <p class="pk">
+                                    3-star hotel<br>
+                                    Piazzale S. Martino, 1, 47838 Riccione RN<br>
+                                    Italy•+39 0541 600966
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="hotelbox">
+                        <div class="hotelimgbox">
+                            <img  width="100%" height="10%" src="{{url_for('static', filename='italyhotel4.jpg')}}" />
+                        </div>
+                        <div class="hotelcontent">
+                            <div>
+                                <h1>Hotel Riva</h1>
+                                <p class="pk">
+                                    4-star hotel<br>
+                                    Corso Europa, 64, 17021 Alassio SV<br>Italy•+39 0182 470549
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hotelbox">
+                        <div class="hotelimgbox">
+                            <img  width="100%" height="10%" src="{{url_for('static', filename='italyhotel5.jpg')}}" />
+                        </div>
+                        <div class="hotelcontent">
+                            <div>
+                                <h1>Hotel Artemide</h1>
+                                <p class="pk"> 4-star hotel<br>
+                                    Via Nazionale, 22, 00184 Roma RM<br>Italy•+39 06 489911</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hotelbox">
+                        <div class="hotelimgbox">
+                            <img  width="100%" height="10%" src="{{url_for('static', filename='italyhotel6.jpg')}}" />
+                        </div>
+                        <div class="hotelcontent">
+                            <div>
+                                <h1>Hotel La Bitta
+                                   </h1>
+                                <p class="pk"> 4-star hotel<br>
+                                    Via Porto Frailis, 08048 Arbatax NU<br>Italy•+39 0782 667080</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script>
+			let daynight = document.querySelector('.daynight')
+			let menutoggle = document.querySelector('.menutoggle')
+			let body = document.querySelector('body')
+			let navigation = document.querySelector('.navigation')
+
+			daynight.onclick=function(){
+				body.classList.toggle('dark')
+				daynight.classList.toggle('active')
+			}
+			menutoggle.onclick=function(){
+				menutoggle.classList.toggle('action')
+				navigation.classList.toggle('action')
+			}
+		</script>
+</body>
+</html>
